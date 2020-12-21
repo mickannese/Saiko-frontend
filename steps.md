@@ -1,23 +1,23 @@
 init app
-- build the app.js page
-index.js -> render app
-- index.html
-  - div id="app"
-    - ReactDOM.render(... , document.getElementById('app'))
+- build the app.js page X
+index.js -> render app X
+- index.html X
+  - div id="app" X
+    - ReactDOM.render(... , document.getElementById('app')) X
 
-- handle dependencies
-  - babel and webpack
-  - style.css
+- handle dependencies X
+  - babel and webpack X
+  - style.css SX
 
 
 build containers
-- active chats/channels toolbar
-- servers toolbar
-- active view from the active chats bar
-- thread view/custom view
+- active chats/channels toolbar X
+- servers toolbar X
+- active view from the active chats bar X
+- thread view/custom view **STILL NO**
 header
-- search
-- account settings box
+- search X
+- account settings box **STILL NO**
 
 
 build insides (sub components)
@@ -29,7 +29,7 @@ build insides (sub components)
 
 pinned concepts
 - how to css animations in react like jquery.animate
-- expansion cars
+- expansion cards
 - formatting in app with text formatting buttons like italic/bold
 - ** text ** / *** text ***
 
