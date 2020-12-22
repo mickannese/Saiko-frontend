@@ -2,12 +2,12 @@ import React from 'react';
 
 var MessageEntry = (props) => {
   return (
-    <div>
+    <div className="msg-entry-container">
       <div className="msg-entry-head">
         <div className="msg-entry-username">
           {props.message.userName}
         </div>
-        <div>
+        <div className="msg-entry-time">
           {props.message.time}
         </div>
       </div>
