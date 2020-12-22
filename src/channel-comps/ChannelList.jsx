@@ -7,7 +7,7 @@ var ChannelList = (props) => {
   return (
     <div className="channel-list">
       {props.channels.map(channel => (
-        <ChannelEntry channel={channel} key={channel} />
+        <ChannelEntry channel={channel} key={channel} current={props.current} select={props.selectCurrent} />
       ))}
     </div>
   );

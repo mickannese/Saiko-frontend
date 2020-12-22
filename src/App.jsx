@@ -14,7 +14,8 @@ class App extends React.Component {
       mainMessageDraft: '',
       searchQuery: '',
       currentSearch: '',
-      messageToSend: ''
+      messageToSend: '',
+      currentChannel: 'home'
     };
   }
 
@@ -52,6 +53,20 @@ class App extends React.Component {
     });
   };
 
+  channelSelector(value) {
+    console.log('click');
+    var self = this;
+    return function handleChannelSelect(event) {
+      console.log(value);
+      if (value !== self.state.currentChannel) {
+        self.setState({
+          currentChannel: value
+        })
+      }
+    }
+
+  }
+
   render() {
     return (
       <div>
@@ -64,11 +79,11 @@ class App extends React.Component {
           SCREEEEEE
         </h1>
         <div className="channel-container">
-          <ChannelList channels={this.state.userInfo.channels} />
+          <ChannelList channels={this.state.userInfo.channels} current={this.state.currentChannel} selectCurrent={this.channelSelector.bind(this)} />
         </div>
         <div className="message-container">
           <div>
-            <MessageList messages={this.state.renderList} />
+            <MessageList messages={this.state.renderList} currentChannel={this.state.currentChannel} />
           </div>
           <div>
             <MessageBox
