@@ -8,6 +8,9 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
+    console.log(props);
+    console.log('this do be gettin runnined ');
+    props.controller.post('/channels', { channelName: 'lobby' });
     this.state = {
       renderList: props.messages,
       userInfo: props.userInfo,
