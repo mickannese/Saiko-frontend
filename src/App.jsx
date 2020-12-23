@@ -57,7 +57,6 @@ class App extends React.Component {
     console.log('click');
     var self = this;
     return function handleChannelSelect(event) {
-      console.log(value);
       if (value !== self.state.currentChannel) {
         self.setState({
           currentChannel: value
