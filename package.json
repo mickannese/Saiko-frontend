@@ -13,15 +13,16 @@
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
+    "axios": "0.21.1",
     "babel-loader": "^8.0.6",
     "jquery": "^2.2.1",
     "live-server": "^1.2.1",
     "lodash": "^4.6.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-router-dom": "^5.2.0",
     "underscore": "^1.8.3",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "axios": "0.21.1"
+    "webpack-cli": "^3.3.11"
   }
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
-import Parsed from '../sample-data/sample-data.js';
-import userinfo from '../sample-data/userGET.js';
-import Controller from './controllers/Controller.js';
+import Saiko from './Saiko.jsx';
+import Login from './Login.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
-let cont = new Controller();
-ReactDOM.render(<App controller={cont} messages={Parsed} userInfo={userinfo} />, document.getElementById('app'));
+
+ReactDOM.render(
+  <BrowserRouter>
+    <Saiko />
+  </BrowserRouter>
+  , document.getElementById('app'));
